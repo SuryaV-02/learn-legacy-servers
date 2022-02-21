@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>skhst_servlet</servlet-name>
+        <servlet-class>skhst_servlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>gnpsd_servlet</servlet-name>
+        <servlet-class>gnpsd_servlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>hit_counter</servlet-name>
+        <servlet-class>hit_counter</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>servlet_lifecycle</servlet-name>
+        <servlet-class>servlet_lifecycle</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>skhst_servlet</servlet-name>
+        <url-pattern>/skhst_servlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>gnpsd_servlet</servlet-name>
+        <url-pattern>/gnpsd_servlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>hit_counter</servlet-name>
+        <url-pattern>/hit_counter</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>servlet_lifecycle</servlet-name>
+        <url-pattern>/servlet_lifecycle</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
